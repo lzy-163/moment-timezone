@@ -65,6 +65,7 @@ jobs:
       - name: Create pull request
         uses: peter-evans/create-pull-request@v6
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           author: 'github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>'
           branch: automated/data-update
           commit-message: 'data: Add ${{ steps.meta.outputs.TZDATA_VERSION }}'
