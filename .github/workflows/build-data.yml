@@ -71,3 +71,4 @@ jobs:
           title: 'data: Add ${{ steps.meta.outputs.TZDATA_VERSION }}'
           body-path: temp/pr-body.txt
           reviewers: ${{ github.actor }}
+          token: ${{ secrets.GITHUB_TOKEN }}
