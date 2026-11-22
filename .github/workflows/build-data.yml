@@ -60,7 +60,7 @@ jobs:
               else { active = 0 }\
             } { if (active == 1) print }' \
             temp/download/latest/NEWS >> temp/pr-body.txt
-          echo "\`\`\`" >> temp/pr-body.txt
+          echo '```' >> temp/pr-body.txt
 
       - name: Create pull request
         uses: peter-evans/create-pull-request@v6
