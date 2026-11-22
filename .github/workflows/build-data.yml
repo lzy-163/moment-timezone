@@ -7,6 +7,9 @@ jobs:
   build-data:
     name: Fetch and build latest data from IANA
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
 
     steps:
       - uses: actions/checkout@v4
