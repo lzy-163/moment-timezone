@@ -41,8 +41,8 @@ jobs:
             data-zdump --zdump-path=./temp/download/latest/zdump \
             data-collect \
             data-dedupe \
-            data-pack \
-            data-tests
+            data-pack
+          npx grunt --verbose data-tests
 
       # The PR-specific workflow doesn't seem to run for PRs created by other workflows,
       # so we run the tests manually here just in case
